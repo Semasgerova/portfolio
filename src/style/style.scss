@@ -35,6 +35,20 @@
             height: 100%;
             .left{
                 width: 15%;
+                .social-media{
+                  width: 100%;
+                  height: 100%;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  a{
+                    i{
+                        color: rgba(255, 255, 255, 0.556);
+                        font-size: 25px;
+                        margin-bottom: 20px;
+                    }
+                  }
+                }
             }
             .middle{
                 width: 70%;
@@ -52,6 +66,78 @@
             }
             .right{
                 width: 15%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: end;
+                .numbers{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    height: 40%;
+                    color: #fff;
+                    span{
+                        padding: 10px;
+                        cursor: pointer;
+                    }
+                    .active{
+                        border-right: 3px solid #fff;
+                    }
+                }
+                .line{
+                    width: 1%;
+                    height: 40%;
+                    background-color: rgba(255, 255, 255, 0.556);
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:992px){
+    .header{
+        .container{
+            .logo{
+                width: 20%;
+            }
+        }
+    }
+    .home{
+        .main{
+            .container{
+                .left{
+                    display: none;
+                }
+                .middle{
+                    width: 100%;
+                }
+                .right{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:768px){
+    .header{
+        .container{
+            .logo{
+                width: 25%;
+            }
+        }
+    }
+}
+
+@media(max-width:430px){
+    .header{
+        .container{
+            .logo{
+                width: 30%;
+            }
+            button{
+                padding: 7px 30px;
             }
         }
     }
