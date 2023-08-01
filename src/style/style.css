@@ -1,4 +1,38 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+.cursor {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #fff;
+  position: fixed;
+  border-radius: 50%;
+  z-index: 1;
+  -webkit-animation: shadow-animation 3s infinite;
+          animation: shadow-animation 3s infinite;
+}
+
+@-webkit-keyframes shadow-animation {
+  0% {
+    box-shadow: 0 0 0 0 #00ff11;
+  }
+  50% {
+    box-shadow: 0 0 8px 4px #00ff11;
+  }
+  100% {
+    box-shadow: 0 0 0 0 #00ff11;
+  }
+}
+
+@keyframes shadow-animation {
+  0% {
+    box-shadow: 0 0 0 0 #00ff11;
+  }
+  50% {
+    box-shadow: 0 0 8px 4px #00ff11;
+  }
+  100% {
+    box-shadow: 0 0 0 0 #00ff11;
+  }
+}
 .header {
   background-color: #000000;
   width: 100%;
@@ -49,6 +83,11 @@
   color: rgba(255, 255, 255, 0.556);
   font-size: 25px;
   margin-bottom: 20px;
+  transition: 0.3s;
+}
+.home .main .container .left .social-media a i:hover {
+  color: #fff;
+  transform: scale(1.2);
 }
 .home .main .container .middle {
   width: 70%;
