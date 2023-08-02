@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Container } from 'react-bootstrap'
+import { Col, Container, Row } from 'react-bootstrap'
 
 const Home = () => {
 
@@ -35,6 +35,22 @@ const Home = () => {
               <div className="line"></div>
             </div>
            </Container>
+        </div>
+        <div className="about">
+          <Container>
+            <Row className='h-100'>
+              <Col sm={12} md={6} className='h-100'>
+                <div className="text">
+                <h1>About</h1>
+                </div>
+              </Col>
+              <Col sm={12} md={6} className='h-100'>
+                <div className="text">
+                  <p></p>
+                </div>
+              </Col>
+            </Row>
+          </Container>
         </div>
     </div>
   )
