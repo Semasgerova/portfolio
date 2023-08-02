@@ -7,6 +7,18 @@ const Home = () => {
 
   const handleNumberClick =(number)=>{
       setActiveNumber(number)
+      if(number==='00'){
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth"
+          });
+      }
+      else if(number==='01'){
+        window.scrollTo({
+          top: 800,
+          behavior: "smooth"
+          });
+      }
   };
 
 
@@ -38,15 +50,18 @@ const Home = () => {
         </div>
         <div className="about">
           <Container>
-            <Row className='h-100'>
-              <Col sm={12} md={6} className='h-100'>
+            <Row className='h-100 m-0'>
+              <Col md={12} lg={6}>
                 <div className="text">
-                <h1>About</h1>
+                <h1>About <span>Me</span></h1>
+                <p>Get to Know <span>me.</span></p>
                 </div>
               </Col>
-              <Col sm={12} md={6} className='h-100'>
-                <div className="text">
-                  <p></p>
+              <Col md={12} lg={6}>
+                <div className="txt">
+                  <h2>Welcome.</h2>
+                  <p>My name is Sama Asgarova, I'm a FrontEnd Developer based in Baku, Azerbaijan. I have 1 year of experience in front-end development, specializing in HTML, CSS, JavaScript, React, TypeScript, and React Bootstrap. I enjoy assisting clients in creating modern and user-friendly websites.</p>
+                  <p>Got any questions? <span>Contact me.</span></p>
                 </div>
               </Col>
             </Row>
