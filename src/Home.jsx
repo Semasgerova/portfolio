@@ -81,7 +81,16 @@ const Home = () => {
               <p>Visit my <a href="https://www.linkedin.com/in/semasgerova/">Linkedin</a> for more details.</p>
             </div>
             <div className="bottom">
-            <div className="slider">
+              <div className="slider">
+                <div className="box">HTML</div>
+                <div className="box">CSS</div>
+                <div className="box">Bootstrap</div>
+                <div className="box">SASS</div>
+                <div className="box">JS</div>
+                <div className="box">React</div>
+                <div className="box">TypeScript</div>
+                <div className="box">Context Api</div>
+                <div className="box">Firebase</div>
                 <div className="box">HTML</div>
                 <div className="box">CSS</div>
                 <div className="box">Bootstrap</div>
@@ -93,6 +102,15 @@ const Home = () => {
                 <div className="box">Firebase</div>
               </div>
               <div className="slider-two">
+              <div className="box">HTML</div>
+                <div className="box">CSS</div>
+                <div className="box">Bootstrap</div>
+                <div className="box">SASS</div>
+                <div className="box">JS</div>
+                <div className="box">React</div>
+                <div className="box">TypeScript</div>
+                <div className="box">Context Api</div>
+                <div className="box">Firebase</div>
                 <div className="box">HTML</div>
                 <div className="box">CSS</div>
                 <div className="box">Bootstrap</div>
@@ -104,6 +122,15 @@ const Home = () => {
                 <div className="box">Firebase</div>
               </div>
               <div className="slider">
+              <div className="box">HTML</div>
+                <div className="box">CSS</div>
+                <div className="box">Bootstrap</div>
+                <div className="box">SASS</div>
+                <div className="box">JS</div>
+                <div className="box">React</div>
+                <div className="box">TypeScript</div>
+                <div className="box">Context Api</div>
+                <div className="box">Firebase</div>
                 <div className="box">HTML</div>
                 <div className="box">CSS</div>
                 <div className="box">Bootstrap</div>
@@ -115,6 +142,15 @@ const Home = () => {
                 <div className="box">Firebase</div>
               </div>
               <div className="slider-two">
+              <div className="box">HTML</div>
+                <div className="box">CSS</div>
+                <div className="box">Bootstrap</div>
+                <div className="box">SASS</div>
+                <div className="box">JS</div>
+                <div className="box">React</div>
+                <div className="box">TypeScript</div>
+                <div className="box">Context Api</div>
+                <div className="box">Firebase</div>
                 <div className="box">HTML</div>
                 <div className="box">CSS</div>
                 <div className="box">Bootstrap</div>
@@ -126,6 +162,15 @@ const Home = () => {
                 <div className="box">Firebase</div>
               </div>
               <div className="slider">
+              <div className="box">HTML</div>
+                <div className="box">CSS</div>
+                <div className="box">Bootstrap</div>
+                <div className="box">SASS</div>
+                <div className="box">JS</div>
+                <div className="box">React</div>
+                <div className="box">TypeScript</div>
+                <div className="box">Context Api</div>
+                <div className="box">Firebase</div>
                 <div className="box">HTML</div>
                 <div className="box">CSS</div>
                 <div className="box">Bootstrap</div>

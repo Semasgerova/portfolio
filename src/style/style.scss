@@ -439,12 +439,12 @@
         }
         .bottom{
             position: relative;
-            overflow: hidden;
-            width: 70%;
+  overflow: hidden;
+  width: 70%;
             .slider{
-                width: calc(150px * 9);
                 display: flex;
-                animation: scroll 40s linear infinite;
+                width: 100%;
+                animation: scroll 50s linear infinite;
                 .box{
                     padding: 15px  30px;
                     color: #fff;
@@ -456,9 +456,8 @@
                 }
             }
             .slider-two{
-                width: calc(150px * 9);
                 display: flex;
-                animation: scrollTwo 40s linear infinite;
+                animation: scrollTwo 30s linear infinite;
                 .box{
                     padding: 15px  30px;
                     color: #fff;
@@ -471,18 +470,24 @@
             }
            @keyframes scroll{
             0% {
-                transform: translateX(100%);
-            }
+                transform: translateX(0%);
+              }
+              50%{
+                transform: translateX(-100%);
+              }
               100% {
-                transform: translateX(calc(-150px * 1));
+                transform: translateX(0%);
               }
            }
            @keyframes scrollTwo{
-              0% {
+            0% {
                 transform: translateX(0%);
               }
+              50%{
+                transform: translateX(-100%);
+              }
               100% {
-                transform: translateX(calc(-150px * 1));
+                transform: translateX(0%);
               }
         }
         }

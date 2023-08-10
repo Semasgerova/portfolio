@@ -417,10 +417,10 @@
   width: 70%;
 }
 .home .skills .bottom .slider {
-  width: 1350px;
   display: flex;
-  -webkit-animation: scroll 40s linear infinite;
-          animation: scroll 40s linear infinite;
+  width: 100%;
+  -webkit-animation: scroll 50s linear infinite;
+          animation: scroll 50s linear infinite;
 }
 .home .skills .bottom .slider .box {
   padding: 15px 30px;
@@ -432,10 +432,9 @@
   -webkit-backdrop-filter: blur(13.4px);
 }
 .home .skills .bottom .slider-two {
-  width: 1350px;
   display: flex;
-  -webkit-animation: scrollTwo 40s linear infinite;
-          animation: scrollTwo 40s linear infinite;
+  -webkit-animation: scrollTwo 30s linear infinite;
+          animation: scrollTwo 30s linear infinite;
 }
 .home .skills .bottom .slider-two .box {
   padding: 15px 30px;
@@ -448,34 +447,46 @@
 }
 @-webkit-keyframes scroll {
   0% {
-    transform: translateX(100%);
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(-100%);
   }
   100% {
-    transform: translateX(-150px);
+    transform: translateX(0%);
   }
 }
 @keyframes scroll {
   0% {
-    transform: translateX(100%);
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(-100%);
   }
   100% {
-    transform: translateX(-150px);
+    transform: translateX(0%);
   }
 }
 @-webkit-keyframes scrollTwo {
   0% {
     transform: translateX(0%);
   }
+  50% {
+    transform: translateX(-100%);
+  }
   100% {
-    transform: translateX(-150px);
+    transform: translateX(0%);
   }
 }
 @keyframes scrollTwo {
   0% {
     transform: translateX(0%);
   }
+  50% {
+    transform: translateX(-100%);
+  }
   100% {
-    transform: translateX(-150px);
+    transform: translateX(0%);
   }
 }
 
