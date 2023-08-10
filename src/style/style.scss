@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
-body{
-    overflow: hidden;
-}
+// body{
+//     overflow: hidden;
+// }
 // .cursor{
 //     width: 30px;
 //     height: 30px;
@@ -413,6 +413,78 @@ body{
                     }
                 }
             }
+        }
+    }
+    .skills{
+        height: 100vh;
+        width: 100%;
+        background-color: #000;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        .top{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            p{
+                width: 50%;
+                a{
+                    color: #00ff11;
+                }
+            }
+        }
+        .bottom{
+            position: relative;
+            overflow: hidden;
+            width: 70%;
+            .slider{
+                width: calc(150px * 9);
+                display: flex;
+                animation: scroll 40s linear infinite;
+                .box{
+                    padding: 15px  30px;
+                    color: #fff;
+                    margin: 10px 20px; 
+                    background: rgba(255, 255, 255, 0.07);
+                    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+                    backdrop-filter: blur(13.4px);
+                    -webkit-backdrop-filter: blur(13.4px);
+                }
+            }
+            .slider-two{
+                width: calc(150px * 9);
+                display: flex;
+                animation: scrollTwo 40s linear infinite;
+                .box{
+                    padding: 15px  30px;
+                    color: #fff;
+                    margin: 10px 20px; 
+                    background: rgba(255, 255, 255, 0.07);
+                    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+                    backdrop-filter: blur(13.4px);
+                    -webkit-backdrop-filter: blur(13.4px);
+                }
+            }
+           @keyframes scroll{
+            0% {
+                transform: translateX(100%);
+            }
+              100% {
+                transform: translateX(calc(-150px * 1));
+              }
+           }
+           @keyframes scrollTwo{
+              0% {
+                transform: translateX(0%);
+              }
+              100% {
+                transform: translateX(calc(-150px * 1));
+              }
+        }
         }
     }
 }

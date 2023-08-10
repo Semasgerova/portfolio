@@ -15,9 +15,15 @@ const Home = () => {
       }
       else if(number==='01'){
         window.scrollTo({
-          top: 800,
+          top: 750,
           behavior: "smooth"
           });
+      }
+      else if(number==='02'){
+        window.scrollTo({
+          top: 1500,
+          behavior: "smooth"
+        })
       }
   };
 
@@ -66,6 +72,71 @@ const Home = () => {
               </Col>
             </Row>
           </Container>
+        </div>
+        <div className="skills">
+            <div className="top">
+              <p className='slogan'>Creating intuitive interfaces, delighting users.</p>
+              <h1>Skills</h1>
+              <p>HTML, CSS, JS, building small and medium web applications with React, custom plugins, features, animations, and coding interactive layouts</p>
+              <p>Visit my <a href="https://www.linkedin.com/in/semasgerova/">Linkedin</a> for more details.</p>
+            </div>
+            <div className="bottom">
+            <div className="slider">
+                <div className="box">HTML</div>
+                <div className="box">CSS</div>
+                <div className="box">Bootstrap</div>
+                <div className="box">SASS</div>
+                <div className="box">JS</div>
+                <div className="box">React</div>
+                <div className="box">TypeScript</div>
+                <div className="box">Context Api</div>
+                <div className="box">Firebase</div>
+              </div>
+              <div className="slider-two">
+                <div className="box">HTML</div>
+                <div className="box">CSS</div>
+                <div className="box">Bootstrap</div>
+                <div className="box">SASS</div>
+                <div className="box">JS</div>
+                <div className="box">React</div>
+                <div className="box">TypeScript</div>
+                <div className="box">Context Api</div>
+                <div className="box">Firebase</div>
+              </div>
+              <div className="slider">
+                <div className="box">HTML</div>
+                <div className="box">CSS</div>
+                <div className="box">Bootstrap</div>
+                <div className="box">SASS</div>
+                <div className="box">JS</div>
+                <div className="box">React</div>
+                <div className="box">TypeScript</div>
+                <div className="box">Context Api</div>
+                <div className="box">Firebase</div>
+              </div>
+              <div className="slider-two">
+                <div className="box">HTML</div>
+                <div className="box">CSS</div>
+                <div className="box">Bootstrap</div>
+                <div className="box">SASS</div>
+                <div className="box">JS</div>
+                <div className="box">React</div>
+                <div className="box">TypeScript</div>
+                <div className="box">Context Api</div>
+                <div className="box">Firebase</div>
+              </div>
+              <div className="slider">
+                <div className="box">HTML</div>
+                <div className="box">CSS</div>
+                <div className="box">Bootstrap</div>
+                <div className="box">SASS</div>
+                <div className="box">JS</div>
+                <div className="box">React</div>
+                <div className="box">TypeScript</div>
+                <div className="box">Context Api</div>
+                <div className="box">Firebase</div>
+              </div>
+            </div>
         </div>
     </div>
   )
