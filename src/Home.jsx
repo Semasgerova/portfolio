@@ -36,6 +36,11 @@ const Home = () => {
         top: 2250,
         behavior: "smooth",
       });
+    }else{
+      window.scrollTo({
+        top: 3000,
+        behavior: "smooth",
+      });
     }
   };
 
@@ -215,6 +220,7 @@ const Home = () => {
         <div className="container">
           <div className="top">
             <h1>Projects</h1>
+            <p className="mt-2">Some of My <span>Works</span></p>
           </div>
           <div className="bottom">
             <Swiper
@@ -234,19 +240,56 @@ const Home = () => {
               className="mySwiper"
             >
               <SwiperSlide>
-                <a href="https://choco-love-8a3d.vercel.app/"><img src={chocolove} /></a>
+                <img src={chocolove} />
+                <div className="text">
+                  <h3>Chocolove</h3>
+                  <p><a href="https://choco-love-8a3d.vercel.app/" className="me-3">Website <i className="fa-solid fa-globe"></i></a> <a href="https://github.com/Semasgerova/ChocoLove">Github <i class="fa-brands fa-github-alt"></i></a></p>
+                </div>
               </SwiperSlide>
               <SwiperSlide>
-                <a href="https://shofy-pi.vercel.app/"><img src={shopy} /></a>
+               <img src={shopy} />
+                <div className="text">
+                  <h3>Shopy</h3>
+                  <p><a href="https://shofy-pi.vercel.app/" className="me-3">Website <i className="fa-solid fa-globe"></i></a> <a href="https://github.com/Semasgerova/e-commerce">Github <i class="fa-brands fa-github-alt"></i></a></p>
+                </div>
               </SwiperSlide>
               <SwiperSlide>
-                <a href="https://project-watch.vercel.app/"><img src={watch} /></a>
+               <img src={watch} />
+                <div className="text">
+                  <h3>Watch</h3>
+                  <p><a href="https://project-watch.vercel.app/" className="me-3">Website <i className="fa-solid fa-globe"></i></a> <a href="https://github.com/Semasgerova/project-watch">Github <i class="fa-brands fa-github-alt"></i></a></p>
+                </div>
               </SwiperSlide>
               <SwiperSlide>
                 <a href="https://project-1-pi-beryl.vercel.app/"><img src={github} /></a>
+                <div className="text">
+                  <h3>Github</h3>
+                  <p><a href="https://project-1-pi-beryl.vercel.app/" className="me-3">Website <i className="fa-solid fa-globe"></i></a> <a href="https://github.com/Semasgerova/github">Github <i class="fa-brands fa-github-alt"></i></a></p>
+                </div>
               </SwiperSlide>
             </Swiper>
           </div>
+        </div>
+      </div>
+      <div className="contact">
+        <div className="container">
+          <Row>
+            <Col md={12} lg={5}>
+            <div className="left">
+            <h1>Contact</h1>
+            <p className="mt-2">Got a problem to <span>solve?</span></p>
+          </div>
+            </Col>
+            <Col md={12} lg={7}>
+            <div className="right">
+            <h3>My email:</h3>
+            <h4 className="mb-4">semaesgerova68@gmail.com</h4>
+            <p>What would you do if you had a software expert available at your fingertips? Want to start new project? Tell me your ideas to develop your dream website.</p>
+          </div>
+            </Col>
+          </Row>
+       
+          
         </div>
       </div>
     </div>

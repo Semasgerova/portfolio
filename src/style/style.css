@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+body {
+  overflow: hidden;
+}
+
 .colorChange {
   background: rgba(7, 7, 7, 0.88);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -405,6 +409,7 @@
   justify-content: center;
   align-items: center;
   color: #fff;
+  font-family: "Lora", serif;
 }
 .home .skills .top p {
   width: 50%;
@@ -431,6 +436,7 @@
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(13.4px);
   -webkit-backdrop-filter: blur(13.4px);
+  font-family: "Lora", serif;
 }
 .home .skills .bottom .slider-two {
   display: flex;
@@ -445,6 +451,7 @@
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(13.4px);
   -webkit-backdrop-filter: blur(13.4px);
+  font-family: "Lora", serif;
 }
 @-webkit-keyframes scroll {
   0% {
@@ -506,6 +513,10 @@
   justify-content: center;
   align-items: center;
   color: #fff;
+  font-family: "Lora", serif;
+}
+.home .projects .top p span {
+  color: #00ff11;
 }
 .home .projects .bottom .swiper {
   width: 100%;
@@ -517,10 +528,109 @@
   background-size: cover;
   width: 350px;
   height: 400px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 16px;
 }
 .home .projects .bottom .swiper .swiper-slide img {
   width: 100%;
   height: 100%;
+  transition: 0.5s;
+}
+.home .projects .bottom .swiper .swiper-slide .text {
+  position: absolute;
+  top: 150%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  font-family: "Lora", serif;
+  transition: 0.3s;
+}
+.home .projects .bottom .swiper .swiper-slide .text h3 {
+  color: #fff;
+}
+.home .projects .bottom .swiper .swiper-slide .text p a {
+  text-decoration: none;
+  color: #fff;
+}
+.home .projects .bottom .swiper .swiper-slide .text p a i {
+  font-size: 15px;
+}
+.home .projects .bottom .swiper .swiper-slide:hover img {
+  transform: scale(1.1);
+}
+.home .projects .bottom .swiper .swiper-slide:hover .text {
+  top: 50%;
+}
+.home .projects .bottom .swiper .swiper-slide::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
+  border-radius: 16px;
+  transition: 0.3s;
+}
+.home .projects .bottom .swiper .swiper-slide:hover::before {
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.37);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.4px);
+  -webkit-backdrop-filter: blur(4.4px);
+}
+.home .projects .bottom .swiper-pagination-bullet {
+  background: #fff;
+}
+.home .contact {
+  height: 100vh;
+  width: 100%;
+  background-color: #000;
+}
+.home .contact .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.home .contact .container .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-family: "Lora", serif;
+}
+.home .contact .container .left h1 {
+  font-size: 70px;
+}
+.home .contact .container .left p {
+  font-family: "Lora", serif;
+  color: rgba(255, 255, 255, 0.382);
+}
+.home .contact .container .left p span {
+  color: #00ff11;
+}
+.home .contact .container .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.home .contact .container .right p {
+  width: 70%;
+}
+.home .contact .container .right h4 {
+  cursor: pointer;
+  transition: 0.3s;
+}
+.home .contact .container .right h4:hover {
+  color: #00ff11;
 }
 
 @media (max-width: 992px) {
