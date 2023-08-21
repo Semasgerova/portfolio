@@ -14,11 +14,17 @@ const Header = () => {
   };
   window.addEventListener("scroll", changeNavbarColor);
 
+  const handleClick =()=>{
+    window.scrollTo({
+      top: 3000,
+    });
+  }
+
   return (
     <div  className={colorChange ? "header colorChange" : "header"} >
       <Container>
         <div className="logo"><img src={logo} alt="" /></div>
-        <Button>Contact</Button>
+        <Button onClick={handleClick}>Contact</Button>
       </Container>
     </div>
   )

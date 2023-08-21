@@ -14,7 +14,7 @@ body {
 .header {
   width: 100%;
   position: fixed;
-  z-index: 2;
+  z-index: 12;
 }
 .header .container {
   display: flex;
@@ -33,6 +33,7 @@ body {
   background-color: transparent;
   border: 1px solid white;
   padding: 7px 40px;
+  cursor: pointer;
 }
 .header .container button:hover {
   background-color: white;
@@ -557,6 +558,7 @@ body {
   z-index: 2;
   font-family: "Lora", serif;
   transition: 0.3s;
+  width: 100%;
 }
 .home .projects .bottom .swiper .swiper-slide .text h3 {
   color: #fff;
@@ -767,6 +769,9 @@ body {
   }
   .home .skills .bottom .slider-two .box {
     margin: 5px 10px;
+  }
+  .home .projects {
+    height: 90vh;
   }
   .home .projects .bottom .swiper .swiper-slide {
     width: 300px;

@@ -34,7 +34,7 @@ body{
 .header {
     width: 100%;
     position: fixed;
-    z-index: 2;
+    z-index: 12;
 
     .container {
         display: flex;
@@ -55,7 +55,7 @@ body{
             background-color: transparent;
             border: 1px solid white;
             padding: 7px 40px;
-
+            cursor: pointer;
             &:hover {
                 background-color: white;
                 color: #000;
@@ -558,6 +558,7 @@ body{
                 color: rgba(255, 255, 255, 0.623);
                 letter-spacing: 2px;
                 font-size: 14px;
+                
                 span {
                     color: #00ff11;
                 }
@@ -591,6 +592,7 @@ body{
                         z-index: 2;
                         font-family: 'Lora', serif;
                         transition: .3s;
+                        width: 100%;
                         h3{
                             color: #fff;
                         }
@@ -907,6 +909,7 @@ body{
             }
         }
         .projects {
+            height: 90vh;
             .bottom{
                 .swiper{
                     .swiper-slide{

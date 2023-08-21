@@ -1,5 +1,7 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import chocolove from "./photo/chocolove.png"
 import shopy from "./photo/shopy.png"
 import watch from "./photo/watch.png"
@@ -12,6 +14,10 @@ import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 
 const Home = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   const [activeNumber, setActiveNumber] = useState("00");
 
   const handleNumberClick = (number) => {
@@ -63,7 +69,7 @@ const Home = () => {
             </div>
           </div>
           <div className="middle">
-            <h1>
+            <h1 data-aos="flip-left">
               <span>Sama</span> Asgarova
             </h1>
             <p>
@@ -112,26 +118,26 @@ const Home = () => {
           <Row className="h-100 m-0">
             <Col md={12} lg={6}>
               <div className="text">
-                <h1>
+                <h1 data-aos="flip-left">
                   About <span>Me</span>
                 </h1>
-                <p>
+                <p data-aos="flip-left">
                   Get to Know <span>me.</span>
                 </p>
               </div>
             </Col>
             <Col md={12} lg={6}>
               <div className="txt">
-                <h2>Welcome.</h2>
-                <p>
+                <h2 data-aos="fade-up">Welcome.</h2>
+                <p data-aos="fade-up">
                   My name is Sama Asgarova, I'm a FrontEnd Developer based in
                   Baku, Azerbaijan. I have 1 year of experience in front-end
                   development, specializing in HTML, CSS, JavaScript, React,
                   TypeScript, and React Bootstrap. I enjoy assisting clients in
                   creating modern and user-friendly websites.
                 </p>
-                <p>
-                  Got any questions? <span>Contact me.</span>
+                <p data-aos="fade-up">
+                  Got any questions? <span  onClick={() => handleNumberClick("04")}>Contact me.</span>
                 </p>
               </div>
             </Col>
@@ -139,7 +145,7 @@ const Home = () => {
         </Container>
       </div>
       <div className="skills">
-        <div className="top">
+        <div className="top" data-aos="zoom-in">
           <p className="slogan">
             Creating intuitive interfaces, delighting users.
           </p>
@@ -219,8 +225,8 @@ const Home = () => {
         </div>
       </div>
       <div className="projects">
-        <div className="container">
-          <div className="top">
+        <div className="container pt-3">
+          <div className="top" data-aos="zoom-in">
             <h1>Projects</h1>
             <p className="mt-2">Some of My <span>Works</span></p>
           </div>
@@ -278,15 +284,15 @@ const Home = () => {
           <Row>
             <Col md={12} lg={5}>
             <div className="left">
-            <h1>Contact</h1>
-            <p className="mt-2">Got a problem to <span>solve?</span></p>
+            <h1 data-aos="flip-left">Contact</h1>
+            <p className="mt-2" data-aos="flip-left">Got a problem to <span>solve?</span></p>
           </div>
             </Col>
             <Col md={12} lg={7}>
             <div className="right">
-            <h3>My email:</h3>
-            <h4 className="mb-4" onClick={openGmail}>semaesgerova68@gmail.com</h4>
-            <p>What would you do if you had a software expert available at your fingertips? Want to start new project? Tell me your ideas to develop your dream website.</p>
+            <h3 data-aos="zoom-in">My email:</h3>
+            <h4 className="mb-4" onClick={openGmail} data-aos="zoom-in">semaesgerova68@gmail.com</h4>
+            <p data-aos="zoom-in">What would you do if you had a software expert available at your fingertips? Want to start new project? Tell me your ideas to develop your dream website.</p>
           </div>
             </Col>
           </Row>
