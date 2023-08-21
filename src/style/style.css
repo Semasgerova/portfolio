@@ -413,6 +413,9 @@ body {
 }
 .home .skills .top p {
   width: 50%;
+  color: rgba(255, 255, 255, 0.623);
+  letter-spacing: 2px;
+  font-size: 14px;
 }
 .home .skills .top p a {
   color: #00ff11;
@@ -437,6 +440,8 @@ body {
   backdrop-filter: blur(13.4px);
   -webkit-backdrop-filter: blur(13.4px);
   font-family: "Lora", serif;
+  display: flex;
+  align-items: center;
 }
 .home .skills .bottom .slider-two {
   display: flex;
@@ -452,6 +457,8 @@ body {
   backdrop-filter: blur(13.4px);
   -webkit-backdrop-filter: blur(13.4px);
   font-family: "Lora", serif;
+  display: flex;
+  align-items: center;
 }
 @-webkit-keyframes scroll {
   0% {
@@ -514,6 +521,11 @@ body {
   align-items: center;
   color: #fff;
   font-family: "Lora", serif;
+}
+.home .projects .top p {
+  color: rgba(255, 255, 255, 0.623);
+  letter-spacing: 2px;
+  font-size: 14px;
 }
 .home .projects .top p span {
   color: #00ff11;
@@ -624,6 +636,9 @@ body {
 }
 .home .contact .container .right p {
   width: 70%;
+  color: rgba(255, 255, 255, 0.623);
+  letter-spacing: 2px;
+  font-size: 14px;
 }
 .home .contact .container .right h4 {
   cursor: pointer;
@@ -650,17 +665,39 @@ body {
     display: none;
   }
   .home .about {
-    height: 80vh;
+    height: 70vh;
   }
   .home .about .container .text {
     padding-top: 50px;
+  }
+  .home .about .container .text h1 {
+    font-size: 60px;
   }
   .home .about .container .txt {
     margin-bottom: 50px;
     text-align: center;
   }
+  .home .about .container .txt h2 {
+    font-size: 35px;
+  }
   .home .about .container .txt p {
     width: 100%;
+  }
+  .home .skills .top p {
+    width: 80%;
+  }
+  .home .contact .container .left h1 {
+    font-size: 60px;
+  }
+  .home .contact .container .right {
+    margin-top: 30px;
+  }
+  .home .contact .container .right p {
+    width: 90%;
+    font-size: 12px;
+  }
+  .home .contact .container .right h4 {
+    font-size: 20px;
   }
 }
 @media (max-width: 768px) {
@@ -674,18 +711,32 @@ body {
     font-size: 25px;
   }
   .home .about {
-    height: 70vh;
+    height: 60vh;
   }
   .home .about .container .text h1 {
-    font-size: 50px;
+    font-size: 45px;
   }
   .home .about .container .text p {
     font-size: 14px;
   }
   .home .about .container .txt h2 {
-    font-size: 30px;
+    font-size: 27px;
   }
   .home .about .container .txt p {
+    font-size: 11px;
+  }
+  .home .skills {
+    height: 80vh;
+  }
+  .home .skills .bottom {
+    width: 80%;
+  }
+  .home .skills .bottom .slider .box {
+    padding: 10px 20px;
+    font-size: 12px;
+  }
+  .home .skills .bottom .slider-two .box {
+    padding: 10px 20px;
     font-size: 12px;
   }
 }
@@ -702,6 +753,44 @@ body {
   .home .main .container .middle p {
     font-size: 18px;
   }
+  .home .skills {
+    height: 70vh;
+  }
+  .home .skills .top p {
+    font-size: 12px;
+  }
+  .home .skills .bottom .slider .box {
+    margin: 5px 10px;
+  }
+  .home .skills .bottom .slider-two .box {
+    margin: 5px 10px;
+  }
+  .home .projects .bottom .swiper .swiper-slide {
+    width: 300px;
+    height: 350px;
+  }
+  .home .contact {
+    height: 70vh;
+  }
+  .home .contact .container .left h1 {
+    font-size: 40px;
+  }
+  .home .contact .container .left p {
+    font-size: 12px;
+  }
+  .home .contact .container .right {
+    margin-top: 30px;
+  }
+  .home .contact .container .right p {
+    width: 100%;
+    font-size: 10px;
+  }
+  .home .contact .container .right h3 {
+    font-size: 20px;
+  }
+  .home .contact .container .right h4 {
+    font-size: 16px;
+  }
 }
 @media (max-width: 350px) {
   .home .about .container .text h1 {
@@ -712,5 +801,9 @@ body {
   }
   .home .about .container .txt p {
     font-size: 10px;
+  }
+  .home .projects .bottom .swiper .swiper-slide {
+    width: 270px;
+    height: 320px;
   }
 }/*# sourceMappingURL=style.css.map */
