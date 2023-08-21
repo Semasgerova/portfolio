@@ -747,6 +747,9 @@ body {
   .header .container button {
     padding: 7px 30px;
   }
+  .home .main {
+    height: 87vh;
+  }
   .home .main .container .middle h1 {
     text-align: center;
   }
@@ -768,6 +771,12 @@ body {
   .home .projects .bottom .swiper .swiper-slide {
     width: 300px;
     height: 350px;
+  }
+  .home .projects .bottom .swiper .swiper-slide .text p {
+    font-size: 14px;
+  }
+  .home .projects .bottom .swiper .swiper-slide .text p a i {
+    font-size: 12px;
   }
   .home .contact {
     height: 70vh;
@@ -805,5 +814,11 @@ body {
   .home .projects .bottom .swiper .swiper-slide {
     width: 270px;
     height: 320px;
+  }
+  .home .projects .bottom .swiper .swiper-slide .text p {
+    font-size: 12px;
+  }
+  .home .projects .bottom .swiper .swiper-slide .text p a i {
+    font-size: 10px;
   }
 }/*# sourceMappingURL=style.css.map */

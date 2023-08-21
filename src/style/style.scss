@@ -873,6 +873,7 @@ body{
 
     .home {
         .main {
+            height: 87vh;
             .container {
                 .middle {
                     h1 {
@@ -911,6 +912,17 @@ body{
                     .swiper-slide{
                         width: 300px;
                         height: 350px;
+                       .text{
+                        p{
+                            font-size: 14px;
+                            a{
+                                i{
+                                    font-size: 12px;
+                                }
+                            }
+
+                        }
+                       }
                     }
                 }
             }
@@ -971,6 +983,17 @@ body{
                     .swiper-slide{
                         width: 270px;
                         height: 320px;
+                        .text{
+                            p{
+                                font-size: 12px;
+                                a{
+                                    i{
+                                        font-size: 10px;
+                                    }
+                                }
+    
+                            }
+                           }
                     }
                 }
             }

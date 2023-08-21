@@ -44,7 +44,9 @@ const Home = () => {
     }
   };
 
-  //swiper
+  const openGmail = () => {
+    window.location.href = 'mailto:semaesgerova68@gmail.com?subject=Konu&body=Hello%20Sama';
+  };
 
   return (
     <div className="home">
@@ -283,7 +285,7 @@ const Home = () => {
             <Col md={12} lg={7}>
             <div className="right">
             <h3>My email:</h3>
-            <h4 className="mb-4">semaesgerova68@gmail.com</h4>
+            <h4 className="mb-4" onClick={openGmail}>semaesgerova68@gmail.com</h4>
             <p>What would you do if you had a software expert available at your fingertips? Want to start new project? Tell me your ideas to develop your dream website.</p>
           </div>
             </Col>
