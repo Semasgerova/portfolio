@@ -6,6 +6,8 @@ import chocolove from "./photo/chocolove.png"
 import shopy from "./photo/shopy.png"
 import watch from "./photo/watch.png"
 import github from "./photo/github.png"
+import yellowgo from "./photo/yellowGo.png"
+
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCoverflow, Pagination } from "swiper/modules";
@@ -29,22 +31,22 @@ const Home = () => {
       });
     } else if (number === "01") {
       window.scrollTo({
-        top: 750,
+        top: 800,
         behavior: "smooth",
       });
     } else if (number === "02") {
       window.scrollTo({
-        top: 1500,
+        top: 1550,
         behavior: "smooth",
       });
     } else if (number === "03") {
       window.scrollTo({
-        top: 2250,
+        top: 2400,
         behavior: "smooth",
       });
     }else{
       window.scrollTo({
-        top: 3000,
+        top: 3500,
         behavior: "smooth",
       });
     }
@@ -262,6 +264,13 @@ const Home = () => {
                 </div>
               </SwiperSlide>
               <SwiperSlide>
+              <img src={yellowgo} />
+                <div className="text">
+                  <h3>Github</h3>
+                  <p><a href="https://yellowgo.co/">Website <i className="fa-solid fa-globe"></i></a></p>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
                <img src={watch} />
                 <div className="text">
                   <h3>Watch</h3>
@@ -269,7 +278,7 @@ const Home = () => {
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <a href="https://project-1-pi-beryl.vercel.app/"><img src={github} /></a>
+               <img src={github} />
                 <div className="text">
                   <h3>Github</h3>
                   <p><a href="https://project-1-pi-beryl.vercel.app/" className="me-3">Website <i className="fa-solid fa-globe"></i></a> <a href="https://github.com/Semasgerova/github">Github <i class="fa-brands fa-github-alt"></i></a></p>

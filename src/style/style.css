@@ -1,8 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
-body {
-  overflow: hidden;
-}
-
 .colorChange {
   background: rgba(7, 7, 7, 0.88);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -97,98 +93,6 @@ body {
   position: relative;
   color: #fff;
 }
-@-webkit-keyframes typing {
-  0%, 51% {
-    content: "";
-  }
-  1%, 50% {
-    content: "F";
-  }
-  2%, 49% {
-    content: "Fr";
-  }
-  3%, 47% {
-    content: "Fro";
-  }
-  4%, 46% {
-    content: "Fron";
-  }
-  5%, 45% {
-    content: "Front";
-  }
-  6%, 44% {
-    content: "FrontE";
-  }
-  7%, 43% {
-    content: "FrontEn";
-  }
-  9%, 42% {
-    content: "FrontEnd";
-  }
-  10%, 41% {
-    content: "FrontEnd ";
-  }
-  11%, 40% {
-    content: "FrontEnd D";
-  }
-  12%, 39% {
-    content: "FrontEnd De";
-  }
-  13%, 38% {
-    content: "FrontEnd Dev";
-  }
-  14%, 37% {
-    content: "FrontEnd Deve";
-  }
-  15%, 36% {
-    content: "FrontEnd Devel";
-  }
-  16%, 35% {
-    content: "FrontEnd Develo";
-  }
-  17%, 34% {
-    content: "FrontEnd Develop";
-  }
-  18%, 32% {
-    content: "FrontEnd Develope";
-  }
-  20%, 30% {
-    content: "FrontEnd Developer";
-  }
-  54%, 95% {
-    content: "";
-  }
-  55%, 94% {
-    content: "F";
-  }
-  56%, 92% {
-    content: "Fr";
-  }
-  58%, 91% {
-    content: "Fre";
-  }
-  59%, 90% {
-    content: "Free";
-  }
-  60%, 89% {
-    content: "Freel";
-  }
-  61%, 88% {
-    content: "Freela";
-  }
-  62%, 86% {
-    content: "Freelan";
-  }
-  63%, 85% {
-    content: "Freelanc";
-  }
-  64%, 84% {
-    content: "Freelance";
-  }
-  65%, 83% {
-    content: "Freelancer";
-  }
-}
 @keyframes typing {
   0%, 51% {
     content: "";
@@ -281,14 +185,6 @@ body {
     content: "Freelancer";
   }
 }
-@-webkit-keyframes blink {
-  0%, 100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-}
 @keyframes blink {
   0%, 100% {
     opacity: 1;
@@ -300,14 +196,12 @@ body {
 .home .main .container .middle .typewriter::before {
   content: "";
   color: rgba(0, 255, 17, 0.4196078431);
-  -webkit-animation: typing 13.5s infinite;
-          animation: typing 13.5s infinite;
+  animation: typing 13.5s infinite;
 }
 .home .main .container .middle .typewriter::after {
   content: "";
   border-right: 1px solid rgba(0, 255, 17, 0.4196078431);
-  -webkit-animation: blink 0.5s linear infinite;
-          animation: blink 0.5s linear infinite;
+  animation: blink 0.5s linear infinite;
 }
 .home .main .container .middle .typewriter.thick::after {
   border-right: 1ch solid rgba(0, 255, 17, 0.4196078431);
@@ -429,8 +323,7 @@ body {
 .home .skills .bottom .slider {
   display: flex;
   width: 100%;
-  -webkit-animation: scroll 40s linear infinite;
-          animation: scroll 40s linear infinite;
+  animation: scroll 40s linear infinite;
 }
 .home .skills .bottom .slider .box {
   padding: 15px 30px;
@@ -446,8 +339,7 @@ body {
 }
 .home .skills .bottom .slider-two {
   display: flex;
-  -webkit-animation: scrollTwo 20s linear infinite;
-          animation: scrollTwo 20s linear infinite;
+  animation: scrollTwo 20s linear infinite;
 }
 .home .skills .bottom .slider-two .box {
   padding: 15px 30px;
@@ -461,29 +353,7 @@ body {
   display: flex;
   align-items: center;
 }
-@-webkit-keyframes scroll {
-  0% {
-    transform: translateX(0%);
-  }
-  50% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(0%);
-  }
-}
 @keyframes scroll {
-  0% {
-    transform: translateX(0%);
-  }
-  50% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(0%);
-  }
-}
-@-webkit-keyframes scrollTwo {
   0% {
     transform: translateX(0%);
   }
@@ -651,9 +521,6 @@ body {
 }
 
 @media (max-width: 992px) {
-  body {
-    overflow: visible;
-  }
   .header .container .logo {
     width: 20%;
   }

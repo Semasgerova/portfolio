@@ -16,7 +16,7 @@ const Header = () => {
 
   const handleClick =()=>{
     window.scrollTo({
-      top: 3000,
+      top: 3500,
     });
   }
 
